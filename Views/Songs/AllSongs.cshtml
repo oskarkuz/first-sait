@@ -1,0 +1,21 @@
+﻿@using WebApplication1.Models
+@{
+	ViewData["Title"] = "AllSongs";
+}
+
+<html>
+	<head>
+		<title>All Songs</title>
+	</head>
+	<body>
+		<h1>All Songs</h1>
+	@{
+		foreach(Song song in Model){
+			<div>
+				<h2>Title: @song.Title</h2>
+				<p>Author: @song.Description</p>
+			</div>
+		}
+	}
+	</body>
+</html>
